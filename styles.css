@@ -1,0 +1,310 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(bg-image.jpg);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 40px;
+  /* align-items: center; */
+  /*background-color: #3498db;*/
+  padding: 10px 0;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 25px;
+  text-align: center;
+  max-height: 100px;
+}
+
+
+
+.container {
+  margin-left: 100px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.container h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.stocklist {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 60px;
+  align-items: center;
+}
+
+
+#addStockForm {
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.butt {
+  padding: 10px;
+  background-color: #0065d8;
+  margin: 22px 10px 0px 0px;
+  height: 20px;
+  border-radius: 5px;
+  min-width: 80px;
+  max-width: 200px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  transition: background-color 150ms ease 100ms;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.butt:hover {
+  background-color: #9cc4f1;
+}
+
+.button {
+  height: 200px;
+  width: 400px;
+  font-size: medium;
+  margin: 10px auto;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: url(test-image.jpg);
+  /* background-size: cover; */
+  background-position: center;
+  background-attachment:scroll;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,
+input[type=password]:focus {
+  background: transparent;
+  outline: none;
+  color: #ffffff;
+}
+
+/* Set a style for all buttons */
+.butt01 {
+  background-color: #2149db;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  opacity: 0.9;
+}
+
+.butt01:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  justify-self: flex-start;
+}
+
+.signup {
+  justify-self: center;
+
+}
+
+
+/* Add padding to container elements */
+.contain {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  /* background-color: #782c4f; */
+  background-image: url(night-sky.jpg);
+  padding-top: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  /* border: 1px solid #888; */
+  width: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* 
+  .clearfix{
+    display: flex;
+    justify-content: space-between;
+   
+ 
+ */
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+.form-content {
+  position: relative;
+}
+
+.form-content i {
+  position: absolute;
+  left: 520px;
+  top: 15px;
+}
+
+.details {
+  line-height: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.butt_heading {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 5px 20px;
+  margin: 10px 30px;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+
+}
+
+
+
+.butt_heading::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #0a5ff3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.butt_heading:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.disabled{
+  background-color: #b3c4ff;
+  color: grey;
+  padding: 14px 20px;
+  margin: 8px 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: not-allowed;
+  width: 100px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.parts{
+  display: flex;
+  padding: 10px 10px;
+}
+
+.part{
+  display: flex;
+  margin: 30px 10px;
+  /* padding: 20px 10px; */
+}
